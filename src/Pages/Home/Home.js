@@ -5,24 +5,29 @@ import { useFetchBucket } from "../../Hooks/useFetchBucket";
 
 
 export default function Home(){
-    const {files} = useFetchBucket();
-    const [hoveredImage, setHoveredImage] = useState(null);
+    const {files, loading} = useFetchBucket();
+    let alNumb = 0;
+
 
 
     return(
         <>
         <h1>Home</h1>
         <div className={styles.main}>
-        {files && files.length !== 0 &&
+        {loading && <p>Carregando...</p>}
+        {!loading && files && files.length !== 0 &&
             files.map(
-                (e, index)=>
-                <img src={e} 
-                key={index}
-                className={styles["image"+(Math.floor(Math.random() * 5) + 1)]}
-
-
-                ></img>
-                   
+                (url, index)=>
+                {
+                    alNumb = (Math.floor(Math.random() * 5) + 1)
+               return (<div key={index} className={styles["container"+alNumb]}>
+                                
+                     <img src={url} 
+                     
+                     className={styles["image"+alNumb]}
+                     ></img>
+                </div>)
+                   }
                 
             )
         }

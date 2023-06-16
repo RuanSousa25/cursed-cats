@@ -25,6 +25,7 @@ export const useFetchBucket = ()=>{
                     }
                 )
             )
+            setLoading(false);
             setFiles(urls);
 
             }catch(e){

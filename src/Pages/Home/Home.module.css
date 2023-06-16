@@ -3,19 +3,45 @@ display: flex;
 justify-content:center;
 align-items: center;
 flex-wrap: wrap;
+overflow: hidden;
 }
 .main img{
     min-height: 250px;
     max-width: 100vw;
     transition: 0.5s;
 }
-.main .image1:hover{
+.main > *{
+    overflow: hidden;
+    
+}
+.main .container1:hover img{
     rotate: 180deg;
 }
-.main .image2:hover{
+.main .container2:hover img{
     filter: invert(1);
 }
-.main .image3:hover{
+.main .container3:hover img{
     filter: opacity(0);
+}
+.container3{
+    background: none;
+    transition: 0.5s;
+}
+.container3:hover{
+    background: url("../../images/dedo_meio.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main .container4:hover img{
+    transform: rotateY(180deg);
+}
+.main .container5:hover{
+    overflow: visible;
+}
+.main .container5:hover img{
+    z-index: 12321;
+    transition: .5s ease-out;
+    transform: scale(5);
 }
 
