@@ -1,0 +1,37 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    margin: auto;
+}
+.form input, label{
+    width: 78%;
+    align-self: center;
+}
+.form input{
+    border: none;
+    outline: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;
+    color: #696969;
+    margin-bottom: .3em;
+}
+.form label{
+    margin-bottom: .5em;
+}
+.form .file_custom_empty input[type="file"]{
+    display: none;
+}
+.file_custom_empty{
+    border: 1px solid #696969;
+    border-radius: 10px;
+    padding: .2em .3em;
+    cursor: pointer;
+}
+.form button{
+    width: 5em;
+    align-self: center;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 221, 229);
+}

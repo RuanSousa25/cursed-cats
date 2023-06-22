@@ -3,21 +3,24 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Home from './Pages/Home/Home';
 import Post from './Pages/Post/Post';
+import { Register } from './Pages/Register/Register';
+import { Login } from './Pages/Login/Login';
 
 function App() {
   return (
     <div className="App">
-       <Header/>
+     
       <div className='container'>
-      <BrowserRouter >
+        <BrowserRouter>
+        <Header />
           <Routes>
-            <Route index path='/' element={<Home/>}></Route>
-            <Route path='/post' element={<Post/>}></Route>
-            
+            <Route path='/' element={<Home />} />
+            <Route path='/register' element={<Register />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/post' element={<Post />} />
           </Routes>
-       </BrowserRouter>
+        </BrowserRouter>
       </div>
-       
     </div>
   );
 }
