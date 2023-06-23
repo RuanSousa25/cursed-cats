@@ -28,10 +28,14 @@
     padding: .2em .3em;
     cursor: pointer;
 }
+
 .form button{
     width: 5em;
+    padding: 1em .3em;
+    text-align: center;
+    border-radius: 10px;
     align-self: center;
     border: none;
     outline: none;
-    background-color: rgb(0, 221, 229);
+    background-color: var(--cyan-color);
 }

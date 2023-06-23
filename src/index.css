@@ -1,5 +1,12 @@
-body{
+:root{
+  --prim-color: #F7F7F9;
+  --sec-color: #2b2d42;
+  --pink-color: #e86a92;
+  --yel-color: #f7e733;
+  --cyan-color: #41e2ba;
+}
 
+body{
   width: 100%;
   height: 100%;
 }

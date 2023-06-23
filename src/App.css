@@ -1,10 +1,17 @@
   @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 
+  :root{
+    --prim-color: #F7F7F9;
+    --sec-color: #2b2d42;
+    --pink-color: #e86a92;
+    --yel-color: #f7e733;
+    --cyan-color: #41e2ba;
+  }
 body{
   margin: 0;
   font-family: 'Roboto Slab', serif;
-  background-color: #77BA99;
+  background-color: var(--prim-color);
 
 }
 .container{
