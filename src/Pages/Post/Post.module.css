@@ -14,19 +14,34 @@
     border-radius: 0;
     border-bottom: 1px solid #ccc;
     color: #696969;
-    margin-bottom: .3em;
+    margin-bottom: 1em;
+    background-color: transparent;
 }
 .form label{
     margin-bottom: .5em;
 }
-.form .file_custom_empty input[type="file"]{
-    display: none;
+.form label img{
+    max-width: 100%;
 }
-.file_custom_empty{
+.file_custom_empty, .file_custom_filled{
     border: 1px solid #696969;
     border-radius: 10px;
     padding: .2em .3em;
     cursor: pointer;
+}
+ .file_custom_empty input[type="file"]{
+    display: none;
+}
+.file_custom_empty{
+   width: auto;
+   padding: .4em 1em;
+}
+.file_custom_filled{
+    text-align: center;
+    width: auto;
+}
+ .file_custom_filled input[type="file"]{
+    display: none;
 }
 
 .form button{
@@ -38,4 +53,5 @@
     border: none;
     outline: none;
     background-color: var(--cyan-color);
+    cursor: pointer;
 }
